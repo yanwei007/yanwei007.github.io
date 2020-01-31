@@ -99,5 +99,5 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: git@github.com:lenve/lenve.github.io.git
+    repo: git@github.com:YanPower007/blog.io.git
     branch: master
