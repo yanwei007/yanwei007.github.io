@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://blog.ccrmbiu.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -41,7 +41,7 @@ external_link:
     exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -93,11 +93,42 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: diaspora
+theme: next
+## Plugins: https://hexo.io/plugins/
+#RSS订阅
+plugin:
+    - hexo-generator-feed
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+
+baidu_url_submit:
+    count: 100 ## 比如100，代表提交最新的一百个链接
+    host: blog.ccrmbiu.cn ## 在百度站长平台中注册的域名
+    token: 4VIY147Rynk14Hog ## 刚刚复制的秘钥，不要公布到任何地方。
+    path: baidu_urls.txt ## 文本文档的地址，新链接会保存在此文本文档里
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: git@github.com:yanwei007/yanwei007.github.io.git
+    repo:
+        github: git@github.com:yanwei007/yanwei007.github.io.git
+        coding: git@e.coding.net:yanwei007/blog.git
     branch: master
+    -type: baidu_url_submitter
+# SEARCH
+search:
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
+algolia:
+    applicationID: 'VEE52TXWT1'
+    indexName: 'index'
+    chunkSize: 5000
+    apiKey: 4bf2a9da6a04a45fdba012e33527c0c7
+aplayer:
+    meting: true
