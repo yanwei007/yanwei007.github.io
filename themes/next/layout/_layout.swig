@@ -51,6 +51,7 @@
         {% include '_third-party/analytics/analytics-with-widget.swig' %}
         {% block footer %}{% endblock %}
       </div>
+      <script src="https://cdn.jsdelivr.net/gh/yanwei007/live2d-widget/autoload.js"></script>
     </footer>
 
     {% if not theme.sidebar.b2t %}

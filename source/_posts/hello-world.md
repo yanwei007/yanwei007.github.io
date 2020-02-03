@@ -1,6 +1,5 @@
 ---
 title: Hello World
-live2d: true
 comments: true
 tags: init
 categories: hexo
