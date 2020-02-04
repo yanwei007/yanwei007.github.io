@@ -97,7 +97,7 @@ menu:
   tags: /tags/|| tags
   categories: /categories/|| th
   archives: /archives/|| archive
-  schedule: /schedule/|| calendar
+  # schedule: /schedule/|| calendar
   sitemap: /sitemap.xml|| sitemap
   commonweal: /404/|| heartbeat
   girl: /girl/||image
@@ -811,4 +811,8 @@ passage_end_tag:
   enabled: true
 # Fireworks
 fireworks: true
+# 背景音乐
 backgroundMusic: 2019675503
+#在线聊天
+daovoice: true
+daovoice_app_id: adaac17f

@@ -2,7 +2,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
-
+{% if theme.google_site_verification %}
+  <meta name="google-site-verification" content="qWTkVUmh9O2frQopzIZ3Dd1UD2Qew0nc5XHRnnNin34" />
+{% endif %}
 
 {% if theme.pace %}
   {% set pace_css_uri = url_for(theme.vendors._internal + '/pace/'+ theme.pace_theme +'.min.css?v=1.0.2') %}
@@ -149,7 +151,16 @@
     }
   };
 </script>
-
+{% if theme.daovoice %}
+ <script>(function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/adaac17f.js","daovoice")</script>
+  <script>
+  daovoice('init', {
+  app_id: "adaac17f",
+  user_id: "NO_89757", // 必填: 该用户在您系统上的唯一ID
+});
+daovoice('update');
+ </script>
+{% endif %}
 {# Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 #}
 {% if theme.canonical %}
   <link rel="canonical" href="{{ config.url }}/{{ page.canonical_path.replace('index.html', '') }}"/>
