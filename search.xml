@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>建站总结之bbll</title>
+    <url>/2020/02/03/jianzhanzongjie-jianzhanzongjie/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="建站初心"><a href="#建站初心" class="headerlink" title="建站初心"></a>建站初心</h3><div align=center><img src="http://qiniu.ccrmbiu.cn/img/微信图片_20200203180806.jpg" width="50%" /></div>
+
+<p>emm……不花一分钱,作为二十一世纪社会好青年,我是那种白嫖的人吗?</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/2.gif" width="50%" /></div>
+
+<p>话说回来,既然白嫖,那就看看吧.附上入坑秘籍:</p>
+<p><a href="https://mp.weixin.qq.com/s/P_n-Vz3h3dZiZ1xNWKHeTg" target="_blank" rel="noopener">不用花一分线，松哥手把手教你上线个人博客</a></p>
+<p>看完之后内心的想法</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/3.gif" /></div>
+
+<p>然而真实操作起来</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/4.gif" /></div>
+
+<p>讲道理来说,挺简单的,就是会遇到那么一个两个三个四个…..个错误罢了,你问我遇到错误怎么办?不要慌,打开程序员宝典</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/5.jpg" /></div>
+
+<p>嗯…总算解决了一些问题,比如下载怎么那么慢,git 怎么又下不动了,npm 怎么又 error 了,hexo 怎么不在环境变量了,hexo 的运行文件藏哪里去了,不管怎么说最终 hexo 安装好了,所以说嘛百度大法好.</p>
+<p>其实…好吧我承认…我给自己放了不少坑,随便一观望有一大堆<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next 主题</a>的教程,,而我呢…哼作为二十一世纪的好青年,怎么着也应该有些与众不同吧.</p>
+<p>打开 hexo 主题,它们似乎都在说:’选我选我’,看了半天没看出个所以然,这个时候打开宝典翻阅’hexo 好看的主题’,看了半天发现除了<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next 主题</a>之外,有好多人都推荐<a href="https://doc.weixiaoduo.com/article/hueman" target="_blank" rel="noopener">hueman 主题</a>.</p>
+<p>随着一顿猛如虎的操作下,安装修改…嗯…还不错(ps:自己选的哭着也要弄好),其他的都还好简单,’宝典’中一堆教程.然鹅,在我即将完成到评论的时候,emm…’宝典’推荐好用的<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">valine 评论系统</a>死活出不来,显示都显示不出来.’宝典都翻烂了’,无解,此时的心情</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/6.jpg" /></div>
+
+<p>灵机一动,试一试其他的,只要能显示出来就谢天谢地了,然并卵…找这个问题都快找疯了.</p>
+<p>最终结果–zero.总结原因–菜是原罪</p>
+<p>在经过一场心里斗争之后…最终决定–老老实实用<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next 主题</a>,说实话,”<strong>不听大佬言,吃亏在眼前</strong>“,还是<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">next</a>稳定爽啊.虽然还是有些坑,但是相比较来说,简直是少之又少,真香.</p>
+<div align=center><img src="http://qiniu.ccrmbiu.cn/7.gif" /></div>
+
+<p>bbll 到此也就先告一段,以后有的话再补充.</p>
+<h3 id="好玩的"><a href="#好玩的" class="headerlink" title="好玩的"></a>好玩的</h3><p><a href="https://github.com/MoePlayer/hexo-tag-aplayer" target="_blank" rel="noopener">音乐</a> <a href="https://github.com/stevenjoezhang/live2d-widget" target="_blank" rel="noopener">萌萌哒看板娘</a></p>
+]]></content>
+      <categories>
+        <category>建站总结</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/31/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>init</tag>
+      </tags>
+  </entry>
+</search>
