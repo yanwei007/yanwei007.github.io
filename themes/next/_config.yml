@@ -48,7 +48,10 @@ footer:
   since: 2020
 
   # Icon between year and copyright info.
-  icon: user
+  icon: 
+    name: heart      #如果name的值为heart表示引用fontawesome网站上的心形图标
+	  animated: true     #如果想用动态图标应该将animated的值设为true
+	  color: "#ff0000"     #图标的色--用16进制数  
 
   # If not defined, will be used `author` from Hexo main config.
   copyright: 一颗大白菜的猪--晋ICP备19002190号
@@ -98,6 +101,7 @@ menu:
   categories: /categories/|| th
   archives: /archives/|| archive
   # schedule: /schedule/|| calendar
+  top: /top/|| signal
   sitemap: /sitemap.xml|| sitemap
   commonweal: /404/|| heartbeat
   girl: /girl/||image

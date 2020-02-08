@@ -14,7 +14,7 @@ emm......不花一分钱,作为二十一世纪社会好青年,我是那种白嫖
 
 话说回来,既然白嫖,那就看看吧.附上入坑秘籍:
 
-[不花一分钱，把自己零散的知识整理成体系，制作成在线电子书](https://mp.weixin.qq.com/s/_W1Ism-pyarB1u2wX-gCFw)
+[不用花一分线，松哥手把手教你上线个人博客](https://mp.weixin.qq.com/s/P_n-Vz3h3dZiZ1xNWKHeTg)
 
 看完之后内心的想法
 

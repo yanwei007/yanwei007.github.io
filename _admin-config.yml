@@ -1,0 +1,5 @@
+# hexo-admin authentification
+admin:
+    username: dashing
+    password_hash: $2a$10$KW91xH2bdyY5jKthsa.tbOz88kfRp1pDpbRoLJv5jn0237Y.bRpVm
+    secret: my super secret phrase
