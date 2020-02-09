@@ -8,7 +8,7 @@ var imagemin = require('gulp-imagemin')
 
 // 压缩 public 目录 css文件
 gulp.task('minify-css', function () {
-    return gulp.src('./public/**/*.css')
+    return gulp.src(['./public/**/*.css', '!public/**/*.min.css'])
         .pipe(minifycss())
         .pipe(gulp.dest('./public'));
 });
@@ -22,7 +22,7 @@ gulp.task('minify-html', function () {
 
 // 压缩 public/js 目录 js文件
 gulp.task('minify-js', function () {
-    return gulp.src('./public/**/*.js')
+    return gulp.src(['./public/**/*.js', '!public/**/*.min.js'])
         .pipe(uglify())
         .pipe(gulp.dest('./public'));
 });

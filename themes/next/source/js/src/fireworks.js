@@ -20,7 +20,7 @@ function createParticule(e, t) {
     (a.color = colors[anime.random(0, colors.length - 1)]),
     (a.radius = anime.random(16, 32)),
     (a.endPos = setParticuleDirection(a)),
-    (a.draw = function() {
+    (a.draw = function () {
       ctx.beginPath(),
         ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0),
         (ctx.fillStyle = a.color),
@@ -38,7 +38,7 @@ function createCircle(e, t) {
     (a.radius = 0.1),
     (a.alpha = 0.5),
     (a.lineWidth = 6),
-    (a.draw = function() {
+    (a.draw = function () {
       (ctx.globalAlpha = a.alpha),
         ctx.beginPath(),
         ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0),
@@ -63,10 +63,10 @@ function animateParticules(e, t) {
     .timeline()
     .add({
       targets: n,
-      x: function(e) {
+      x: function (e) {
         return e.endPos.x;
       },
-      y: function(e) {
+      y: function (e) {
         return e.endPos.y;
       },
       radius: 0.1,
@@ -87,11 +87,11 @@ function animateParticules(e, t) {
 }
 function debounce(e, t) {
   var a;
-  return function() {
+  return function () {
     var n = this,
       i = arguments;
     clearTimeout(a),
-      (a = setTimeout(function() {
+      (a = setTimeout(function () {
         e.apply(n, i);
       }, t));
   };
@@ -104,7 +104,7 @@ if (canvasEl) {
     pointerY = 0,
     tap = "mousedown",
     colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"],
-    setCanvasSize = debounce(function() {
+    setCanvasSize = debounce(function () {
       (canvasEl.width = 2 * window.innerWidth),
         (canvasEl.height = 2 * window.innerHeight),
         (canvasEl.style.width = window.innerWidth + "px"),
@@ -113,13 +113,13 @@ if (canvasEl) {
     }, 500),
     render = anime({
       duration: 1 / 0,
-      update: function() {
+      update: function () {
         ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
       }
     });
   document.addEventListener(
     tap,
-    function(e) {
+    function (e) {
       "sidebar" !== e.target.id &&
         "toggle-sidebar" !== e.target.id &&
         "A" !== e.target.nodeName &&
@@ -153,7 +153,7 @@ function createParticule(e, t) {
     (a.color = colors[anime.random(0, colors.length - 1)]),
     (a.radius = anime.random(16, 32)),
     (a.endPos = setParticuleDirection(a)),
-    (a.draw = function() {
+    (a.draw = function () {
       ctx.beginPath(),
         ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0),
         (ctx.fillStyle = a.color),
@@ -171,7 +171,7 @@ function createCircle(e, t) {
     (a.radius = 0.1),
     (a.alpha = 0.5),
     (a.lineWidth = 6),
-    (a.draw = function() {
+    (a.draw = function () {
       (ctx.globalAlpha = a.alpha),
         ctx.beginPath(),
         ctx.arc(a.x, a.y, a.radius, 0, 2 * Math.PI, !0),
@@ -196,10 +196,10 @@ function animateParticules(e, t) {
     .timeline()
     .add({
       targets: n,
-      x: function(e) {
+      x: function (e) {
         return e.endPos.x;
       },
-      y: function(e) {
+      y: function (e) {
         return e.endPos.y;
       },
       radius: 0.1,
@@ -220,11 +220,11 @@ function animateParticules(e, t) {
 }
 function debounce(e, t) {
   var a;
-  return function() {
+  return function () {
     var n = this,
       i = arguments;
     clearTimeout(a),
-      (a = setTimeout(function() {
+      (a = setTimeout(function () {
         e.apply(n, i);
       }, t));
   };
@@ -237,7 +237,7 @@ if (canvasEl) {
     pointerY = 0,
     tap = "mousedown",
     colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"],
-    setCanvasSize = debounce(function() {
+    setCanvasSize = debounce(function () {
       (canvasEl.width = 2 * window.innerWidth),
         (canvasEl.height = 2 * window.innerHeight),
         (canvasEl.style.width = window.innerWidth + "px"),
@@ -246,13 +246,13 @@ if (canvasEl) {
     }, 500),
     render = anime({
       duration: 1 / 0,
-      update: function() {
+      update: function () {
         ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
       }
     });
   document.addEventListener(
     tap,
-    function(e) {
+    function (e) {
       "sidebar" !== e.target.id &&
         "toggle-sidebar" !== e.target.id &&
         "A" !== e.target.nodeName &&
@@ -264,3 +264,24 @@ if (canvasEl) {
     setCanvasSize(),
     window.addEventListener("resize", setCanvasSize, !1);
 }
+
+var coreSocialistValues = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"],
+  index = Math.floor(Math.random() * coreSocialistValues.length);
+
+document.body.addEventListener('click',
+  function (e) {
+    //过滤a标签
+    if (e.target.tagName == 'A') {
+      return;
+    }
+    var x = e.pageX,
+      y = e.pageY,
+      span = document.createElement('span');
+    span.textContent = coreSocialistValues[index];
+    index = (index + 1) % coreSocialistValues.length;
+    span.style.cssText = ['z-index: 9999999; position: absolute; font-weight: bold; color: #ff6651; top: ', y - 20, 'px; left: ', x, 'px;'].join('');
+    document.body.appendChild(span);
+    setTimeout(function timer() {
+      document.body.removeChild(span)
+    }, 1000);
+  });
