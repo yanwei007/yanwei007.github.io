@@ -465,7 +465,7 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: qWTkVUmh9O2frQopzIZ3Dd1UD2Qew0nc5XHRnnNin34
 
 # Google Analytics
 #google_analytics:
@@ -820,3 +820,5 @@ backgroundMusic: 2019675503
 #在线聊天
 daovoice: true
 daovoice_app_id: adaac17f
+# 百度站长验证工具
+baidu_site_verification: Jt7VDVOpNd
