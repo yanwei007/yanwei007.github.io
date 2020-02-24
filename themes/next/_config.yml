@@ -54,7 +54,7 @@ footer:
 	  color: "#ff0000"     #图标的色--用16进制数  
 
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 一颗大白菜的猪--晋ICP备19002190号
+  copyright: 一颗大白菜的猪--<a href='http://beian.miit.gov.cn/' _blank>晋ICP备19002190号</a>
 
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
@@ -381,7 +381,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: 1UGyRrXriipHEq5KgGOSVOHh-gzGzoHsz # your leancloud application appid
   appkey: 3hS8eDhnmnsTbWyzUHsu0v9n # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
